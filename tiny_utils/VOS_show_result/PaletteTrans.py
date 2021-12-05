@@ -3,10 +3,10 @@ import numpy
 import cv2
 from PIL import Image
 
-palette_path = r'palette_davis.png'
+palette_path = 'palette_davis.png'
 palette = Image.open(palette_path).getpalette()
 
-mask_dir = r'BiDec_result'
+mask_dir = '/home/guopx/study/STCN_root/BiDecVOS/outputs/ytb-mem7_new/Annotations'
 
 for video_name in os.listdir(mask_dir):
     video_dir = os.path.join(mask_dir, video_name)
