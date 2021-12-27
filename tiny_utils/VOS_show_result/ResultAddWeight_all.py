@@ -1,8 +1,8 @@
 import cv2
 import os
 
-val_txt = 'val-YTB19.txt'
-image_path = '/home/guopx/study/STCN_root/YouTube/valid/JPEGImages'
+val_txt = 'val-YTB18.txt'
+image_path = '/home/guopx/study/DATA/YOUTUBE/valid/JPEGImages'
 mask_path = '/home/guopx/study/STCN_root/BiDecVOS/outputs/ytb-mem7_new/Annotations'
 save_path = '/home/guopx/study/STCN_root/BiDecVOS/outputs/ytb-mem7_new/Annotations-AddWeight'
 
