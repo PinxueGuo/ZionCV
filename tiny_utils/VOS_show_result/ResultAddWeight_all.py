@@ -1,10 +1,10 @@
 import cv2
 import os
 
-val_txt = 'val-YTB19.txt'
-image_path = '/home/guopx/study/STCN_root/YouTube/valid/JPEGImages'
-mask_path = '/home/guopx/study/STCN_root/BiDecVOS/outputs/ytb-mem7_new/Annotations'
-save_path = '/home/guopx/study/STCN_root/BiDecVOS/outputs/ytb-mem7_new/Annotations-AddWeight'
+val_txt = 'val-davis.txt'
+image_path = '/home/guopx/study/STCN_root/DAVIS/2017/trainval/JPEGImages/480p'
+mask_path = '/home/guopx/study/PLR-MAMP/ckpt/plr_davis_it-1200-150/DAVIS'
+save_path = '/home/guopx/study/PLR-MAMP/ckpt/plr_davis_it-1200-150/DAVIS-AddWeight'
 
 
 val_list = open(val_txt).readlines()
