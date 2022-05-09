@@ -1,10 +1,10 @@
 import cv2
 import os
 
-mask_dir = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/MAST/breakdance'
+mask_dir = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/MAST-offsetdebug-OnlineDec-660/breakdance'
 mask_list = os.listdir(mask_dir)
 
-save_dir = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/breakdance'
+save_dir = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/MAST-offsetdebug-OnlineDec-660/breakdance'
 if not os.path.exists(save_dir):
     # 路径不存在的话会保存不下来，但不报错
     os.makedirs(save_dir)

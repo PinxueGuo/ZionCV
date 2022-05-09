@@ -1,17 +1,17 @@
 import cv2
 import os
 
-val_txt = 'val-YTB18.txt'
-image_path = '/home/guopx/study/DATA/YOUTUBE/valid/JPEGImages'
-mask_path = '/home/guopx/study/PLR-MAMP/ckpt/plr_ytb_it-1200-150_1e4_1/Annotations'
-save_path = '/home/guopx/study/PLR-MAMP/ckpt/plr_ytb_it-1200-150_1e4_1/Annotations-AddWeight'
+val_txt = '/Users/pxguo/Documents/DAVIS/ImageSets/2017/val.txt'
+image_path = '/Users/pxguo/Documents/DAVIS/JPEGImages/480p'
+mask_path = '/Volumes/GuoPinxue/LocalData/result_CFBI/davis'
+save_path = '/Volumes/GuoPinxue/LocalData/result_CFBI/davis-AddWeight'
 
 
 val_list = open(val_txt).readlines()
 val_list = [line.strip() for line in val_list]
 
 for video in val_list:
-    print(video)
+    # print(video)
     image_dir = os.path.join(image_path, video)
     mask_dir = os.path.join(mask_path, video)
     save_dir = os.path.join(save_path, video)
@@ -27,4 +27,4 @@ for video in val_list:
         
         result = cv2.addWeighted(image, 1, mask, 1.5, 0)
         cv2.imwrite(save_filename, result)
-    # print(video, ':done!')
+    print(video, ': done!')
