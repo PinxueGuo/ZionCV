@@ -1,10 +1,10 @@
 import cv2
 import os
 
-val_txt = '/Users/pxguo/Documents/DAVIS/ImageSets/2017/val.txt'
-image_path = '/Users/pxguo/Documents/DAVIS/JPEGImages/480p'
-mask_path = '/Volumes/GuoPinxue/LocalData/result_CFBI/davis'
-save_path = '/Volumes/GuoPinxue/LocalData/result_CFBI/davis-AddWeight'
+val_txt = 'dataset/val-davis.txt'
+image_path = '/Users/pxguo/Documents/LocalData/DAVIS/JPEGImages/480p'
+mask_path = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/MAST-offsetdebug-OnlineDec-660'
+save_path = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/MAST-offsetdebug-OnlineDec-660-AddWeight'
 
 
 val_list = open(val_txt).readlines()
