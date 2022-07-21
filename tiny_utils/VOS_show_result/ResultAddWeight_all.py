@@ -1,10 +1,15 @@
 import cv2
 import os
 
-val_txt = 'dataset/val-davis.txt'
-image_path = '/Users/pxguo/Documents/LocalData/DAVIS/JPEGImages/480p'
-mask_path = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/MAST-offsetdebug-OnlineDec-660'
-save_path = '/Users/pxguo/Documents/LocalData/result_PLR-MAMP/MAST-offsetdebug-OnlineDec-660-AddWeight'
+# val_txt = 'dataset/val-davis.txt'
+# image_path = '/mnt/share/et21-guopx/codes/FDVOS/DATA/DAVIS/2017/trainval/JPEGImages/480p'
+# mask_path = '/mnt/share/et21-guopx/codes/FDVOS/outputs/avos-swin_384/300k'
+# save_path = '/mnt/share/et21-guopx/codes/FDVOS/outputs/avos-swin_384/300k_AddWeight'
+
+val_txt = '/mnt/share/et21-guopx/codes/ZionCV/dataset/val-YTB19.txt'
+image_path = '/mnt/share/et21-guopx/datasets/STCN_data/YouTube2019/valid/JPEGImages'
+mask_path = '/mnt/share/et21-guopx/codes/FDVOS/outputs/avos-swin_384_ytb/290k/Annotations'
+save_path = '/mnt/share/et21-guopx/codes/FDVOS/outputs/avos-swin_384_ytb/290k_AddWeight'
 
 
 val_list = open(val_txt).readlines()

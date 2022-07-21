@@ -2,7 +2,8 @@ import os
 import cv2
 import time
 
-videos_dir = '/home/guopx/VOS/my_utils/result/Our_1'
+videos_dir = '/mnt/share/et21-guopx/codes/FDVOS/outputs/avos-swin_384_ytb/290k_AddWeight'
+save_dir = '/mnt/share/et21-guopx/codes/FDVOS/outputs/avos-swin_384_ytb/290k_AddWeight_video'
 videos_list = os.listdir(videos_dir)
 fps = 5
 
