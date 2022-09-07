@@ -2,9 +2,9 @@ import os
 import cv2
 import time
 
-videos_dir = '/home/guopx/VOS/my_utils/result/Our_1'
+videos_dir = '/Users/pxguo/Documents/LocalData/my_videos/JPEGImages/1'
 videos_list = os.listdir(videos_dir)
-fps = 5
+fps = 30
 
 for video in videos_list:
     images_dir = os.path.join(videos_dir, video)
@@ -14,7 +14,7 @@ for video in videos_list:
     images_list = os.listdir(images_dir)
     images_list.sort()
     shape = cv2.imread(os.path.join(images_dir, images_list[0])).shape[:2]      # eg: (480, 854) 
-    size = (shape[1], shape[0])
+    size = (shape[0], shape[1])
     fourcc = cv2.VideoWriter_fourcc(*'mp4v') # mp4
     videoWriter = cv2.VideoWriter(save_path, fourcc, fps, size)
 
