@@ -10,7 +10,9 @@ def split_single_video(video_path, frames_dir=""):
 		if ret:
 			success, buffer = cv2.imencode(".png", frame)
 			if success:
-				with open(f"{frames_dir}{cnt}.png", "wb") as f:
+				file_name = '{:0>5d}'.format(cnt)+'.png'
+				file_path = frames_dir+file_name
+				with open(file_path, "wb") as f:
 					f.write(buffer.tobytes())
 					f.flush()
 				cnt += 1
@@ -19,9 +21,9 @@ def split_single_video(video_path, frames_dir=""):
 
 
 # rename with the directory where you stored videos
-video_dir = "/Users/pxguo/Documents/LocalData/my_videos/mp4/"
+video_dir = "/home/et21-guopx/codes/DATA/HonorVOS/example/mp4/"
 # rename with the directory where you would like to store frames
-frames_dir = "/Users/pxguo/Documents/LocalData/my_videos/JPEGImages/"
+frames_dir = "/home/et21-guopx/codes/DATA/HonorVOS/example/JPEGImages/"
 all_video_paths = os.listdir(video_dir)
 TOTAL = 0
 for video_path in all_video_paths:
