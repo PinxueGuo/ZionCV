@@ -3,8 +3,8 @@ import os
 
 val_txt = 'dataset/val-davis.txt'
 image_path = '/Users/pxguo/Documents/LocalData/DAVIS/JPEGImages/480p'
-mask_path = '/Users/pxguo/Documents/LocalData/result_STCN/stcn_davis'
-save_path = '/Users/pxguo/Documents/LocalData/result_STCN/stcn_davis_AddWeight'
+mask_path = '/Users/pxguo/Documents/LocalData/DAVIS/Annotations/480p'
+save_path = '/Users/pxguo/Documents/LocalData/DAVIS/Annotations/480p_AddWeight'
 
 
 val_list = open(val_txt).readlines()
