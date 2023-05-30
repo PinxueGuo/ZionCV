@@ -2,9 +2,9 @@ import cv2
 import os
 
 val_txt = 'dataset/val-davis.txt'
-image_path = '/Users/pxguo/Documents/LocalData/DAVIS/JPEGImages/480p'
-mask_path = '/Users/pxguo/Documents/LocalData/DAVIS/Annotations/480p'
-save_path = '/Users/pxguo/Documents/LocalData/DAVIS/Annotations/480p_AddWeight'
+image_path = '/mnt/share172/et21-guopx/codes/DATA/DAVIS/2017/trainval/JPEGImages/480p'
+mask_path = '/mnt/share172/et21-guopx/codes/ClickVOS/output/v1d3++_DINO_s2/150k'
+save_path = '/mnt/share172/et21-guopx/codes/ClickVOS/output/v1d3++_DINO_s2/150k_overlay'
 
 
 val_list = open(val_txt).readlines()
